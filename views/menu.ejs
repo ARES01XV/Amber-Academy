@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="https://kit.fontawesome.com/b7a2ac83f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="https://cdn.discordapp.com/attachments/882362353507778613/974779547377627216/logokjhgfdxsz.png"
+                    alt="logo">
+                <!-- <i class="fa-light fa-plate-utensils"></i>
+                <h3>Vegetableegy</h3> -->
+            </a>
+        </div>
+    
+        <nav>
+            <a href="/menu">Menu</a>
+            <a href="/order">Order Now</a>
+        </nav>
+    
+        <div class="cart">
+            <a href="/cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="cards_container">
+        <% Object.values(menu).forEach((menu) => { %>  
+        <div class="card">
+            <div class="item_picture">
+                <img src="https://assets.epicurious.com/photos/58efc4b2bf5d820f40d36f21/1:1/w_1920%2Cc_limit/04122017-buddhabowls-recipe.jpg">
+            </div>
+            <!-- <br><br> -->
+            <div class="item_name">
+                <h3><%= menu.item_name %></h3>
+            </div>
+            <br><br>
+            <div class="item_description">
+                <p><%= menu.item_description %> </p>
+            </div>
+            <br>
+            <div class="item_price">
+                <b><%= menu.item_price %></b>
+            </div>
+            <br>
+            <div class="add_to_cart">
+                <p>Add to cart</p>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+
+
+    <!-- <p>Welcome to <%= title %></p>
+    <a href="/users"> jhgfdw</a> -->
+</body>
+</html>
