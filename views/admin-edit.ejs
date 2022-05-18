@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/admin/post" method="post">
+        <div>
+            <label for="admin_id">Admin ID</label>
+            <input type="number" name="admin_id" value="<%= admin.admin_id %>" placeholder="<%= admin.admin_id %>">
+        </div>
+        <div>
+            <label for="admin_name">Admin Name</label>
+            <input type="text" name="admin_name" value="<%= admin.admin_name %>">
+        </div>
+        <div>
+            <label for="admin_password">Admin Password</label>
+            <input type="text" name="admin_password" value="<%= admin.admin_password %>">
+        </div>
+        <!-- <div>
+            <label for="order_id">Order ID</label>
+            <input type="number" name="order_id">
+        </div> -->
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>

@@ -3,7 +3,7 @@ const { route } = require('.');
 var router = express.Router();
 var conn = require('../lib/db')
 
-// GET users listing. 
+// GET menu 
 router.get('/', function(req, res) {
   conn.query('SELECT * FROM restaurant_ordering_system.menu', (err, rows) => {
     if (err) {

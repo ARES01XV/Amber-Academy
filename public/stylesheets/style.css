@@ -166,4 +166,84 @@ cursive; */
   bottom: 2%;
   transform: translateX(-50%);
 }
+
+/* FOOTER***************************** */
+footer {
+  background: #343434;
+  padding: 5%;
+  position: relative;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.one,
+.two,
+.three,
+.four {
+  display: flex;
+  flex-direction: column;
+}
+
+.one h1,
+.two h1,
+.three h1,
+.four h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: lighter;
+  color: #1d7101;
+}
+
+.one a,
+.two a,
+.three a,
+.four a {
+  text-decoration: none;
+  color: white;
+  padding: 2% 0;
+}
+
+.one a:hover,
+.two a:hover,
+.three a:hover,
+.four a:hover {
+  text-decoration: underline #3ef900;
+}
+
+/* admin login*********************** */
+footer>a {
+  border: 1px solid red;
+  text-decoration: none;
+  color: #343434;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* table container*********************** */
+.table_container{
+  /* border: 1px solid red; */
+  width: 80vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.table_container table{
+  background: white;
+}
+
+/* update icons*********************** */
+table tbody tr td>a {
+  text-decoration: none;
+  padding: 5%;
+}
+.fa-file-pen{
+color: blue;
+}
+.fa-trash{
+  color: red;
+}
+
+
 /*add glow, grey hover, grey border, style btn
